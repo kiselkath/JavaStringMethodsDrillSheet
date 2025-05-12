@@ -39,7 +39,8 @@ public class StringDrill {
      */
     public String replaceVowels(String input) {
         // Use replaceAll with regex pattern "[aeiouAEIOU]"
-        return null;
+        // (?i) — включает регистронезависимый режим (чтобы заменялись и большие, и маленькие буквы).
+        return input.replaceAll("(?i)[aeiouаеёиоуыэюя]", "Ъ");
     }
 
     /**
